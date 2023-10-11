@@ -16,7 +16,7 @@ fun Navigation(modifier: Modifier = Modifier) {
         modifier = modifier
     ) {
         composable(route = NavigationState.Meals.route) {
-            MealsCategoriesScreen(navController)
+            MealsCategoriesScreen(navController= navController, viewModel = viewModel())
         }
     }
 }

@@ -1,13 +1,13 @@
 package com.zezzi.eventzezziapp
 
 import android.os.Bundle
+import Navigation
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.zezzi.eventzezziapp.navigation.Navigation
 import com.zezzi.eventzezziapp.ui.theme.EventZezziAppTheme
 
 class MainActivity : ComponentActivity() {

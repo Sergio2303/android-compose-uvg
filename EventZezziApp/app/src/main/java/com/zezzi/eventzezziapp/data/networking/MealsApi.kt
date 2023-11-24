@@ -9,7 +9,6 @@ interface MealsApi {
     @GET("categories.php")
     suspend fun getMeals(): MealsCategoriesResponse
 
-//Utilizar Responsesss
     @GET("filter.php")
     suspend fun getFilter(@Query("c") category: String): ResponseS
 }

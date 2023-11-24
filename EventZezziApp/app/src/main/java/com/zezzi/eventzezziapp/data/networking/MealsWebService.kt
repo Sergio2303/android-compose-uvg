@@ -14,11 +14,13 @@ class MealsWebService {
             .baseUrl("https://www.themealdb.com/api/json/v1/1/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
         api = retrofit.create(MealsApi::class.java)
     }
     suspend fun getMeals(): MealsCategoriesResponse {
         return api.getMeals()
     }
+
     suspend fun getFilter(category: String): ResponseS {
         return api.getFilter(category)
     }

@@ -55,7 +55,7 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberImagePainter
-import com.zezzi.eventzezziapp.navigation.NavigationState
+import com.zezzi.eventzezziapp.navigation.Navigation
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter", "CoroutineCreationDuringComposition")
 @OptIn(ExperimentalMaterial3Api::class)
@@ -87,7 +87,7 @@ fun MealsCategoriesScreen(
                         .background(Color(0xFFFBFBEC))
                         .aspectRatio(1f)
                         .clickable {
-                            navController.navigate("${NavigationState.FilteredMeals.route}/{category}")
+                            navController.navigate("${Navigation.FilteredMeals.route}/{category}")
                         }
                 ) {
                     Column(
